@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello</title>
+
+<link href="dreamworld.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="dreamworld.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('gallery1.jpg','gallery2.png','gallery3.jpg','gallery4.jpg','gallery5.png','gallery6.png')" ,onLoad="auto()">
+<div id="container">
+<div id="header">
+<h1>Gallery</h1>
+</div>
+<div id="slideshow">
+<form>
+
+<img src="slide1.jpg" width="960" height="150" name="slideshow" />
+<input type="radio" name = "radio" onClick="load_slide1()"  >
+<input type="radio" name = "radio" onClick="load_slide2()"  >
+<input type="radio" name = "radio" onClick="load_slide3()">
+<input type="radio" name = "radio" onClick="load_slide4()">
+
+</form>
+</div>
+
+<div id="nav">
+<div id="grad">
+<h3> <a href="Index.html" title="Home" >Home </a></h3>
+<h3> <a href="About.html" title="About" >About </a></h3>
+<h3> <a href="Resume.html" title="Resume" >Resume</a> </h3>
+<h3><a href="Contact.html" title="Contact" >Contact</a></h3>
+</div>
+</div>
+<div id="section">
+<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+</div>
+
+<div id="sidebar">
+  <img src="about_me_pic.jpg" alt="" width="300" height="188" id="default" onMouseOut="MM_swapImgRestore()"/> </div>
+
+<div id="gallery">
+<table >
+  <tbody>
+    <tr>
+      <td><a href="Butterfly-gallery.html" title="Gallery" target="new"><img src="frag1.jpg" alt="butterfly" width="107" height="90" id="Image1" onMouseOver="MM_swapImage('default','','gallery1.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td><a href="Friends-gallery.html" target="new"><img src="frag2.jpg" alt="fox" width="107" height="90" onMouseOver="MM_swapImage('default','','gallery2.png',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td><a href="Flying-gallery.html" target="new"><img src="frag3.jpg" alt="eyes" width="107" height="90" onMouseOver="MM_swapImage('default','','gallery3.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+    </tr>
+    <tr>
+      <td><a href="Finger-gallery.html" target="new"><img src="frag4.jpg" alt="finger" width="107" height="90" onMouseOver="MM_swapImage('default','','gallery4.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td><a href="Faces-gallery.html" target="new"><img src="frag5.jpg" alt="faces" width="107" height="90" onMouseOver="MM_swapImage('default','','gallery5.png',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td><a href="Smile-gallery.html" target="new"><img src="frag6.jpg" alt="smile" width="107" height="90" onMouseOver="MM_swapImage('default','','gallery6.png',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+<div id="footer">
+ &copy; Natalia
+</div>
+</div>
+</body>
+</html>
